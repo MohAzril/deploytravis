@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+body{
+    margin: 0 0;
+    /* background-image: url("/home/alphatech/kumpulan/CSS/project-css-layouting/img/sample-pattern.png"); */
+    background-color: white;
+}
+header{
+    background-color: white;
+    width: 100%;
+    box-shadow: 0px 2px grey;   
+}
+
+header .box {
+    width: 100%;
+    height: 95px;
+    background-color: white;
+}
+
+header img{
+    position: absolute;
+    bottom: 12.83px;
+    left: 106px;
+}
+nav{
+    position: absolute;
+    right: 105px;
+    bottom: 33px;
+}
+
+nav ul{
+    width: 30%;
+    display: inline;
+    margin: 0 auto;
+}
+
+nav ul li{
+    display: inline;
+    text-align: center;
+    margin: 0 25px;
+}
+nav ul li a{
+    color:#19345E;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 14px;
+    text-align:left;    
+}
+
+a.active{
+    color:#F47522;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 14px;
+    text-align:left;    
+}
+
+#banner .box{
+  background-image: url("../img/img/img-header@2x.png");
+  background-size: cover;
+  background-position: bottom center;
+  height: 700px;
+  width: 100%;
+  }
+
+#banner .profil{
+    width: 200px;
+    height: 200px;
+    background-image: url("../img/img/exp-gallery/superthumb.jpg");
+    background-size: cover;
+    background-position: bottom center;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+#banner .nama{
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+
+#banner .alamat{
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+img.alamat{
+    width: 20px;
+    height: 25px;
+}
+
+p.alamat{
+    display: inline;
+    color: white;
+}
+
+#banner .job{
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+p.job{
+    font-size: 25px;
+    font-weight:bold;
+    color: white;
+}
+
+.downloadcv{
+    padding: 10px 20px;
+    border: 1px solid orange;
+    background: orange;
+    color: white;
+    display: table;
+    text-decoration: none;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: all 1s ease;
+}
+
+.downloadcv:hover {
+    background: white;
+    color: orange;
+}
+
+#info{
+    border: 1px solid grey; 
+    border-radius: 10px;
+    box-shadow: -2px 2px grey;
+    background: white;
+    margin-top: 75px;
+    margin-right: 150px;
+    margin-left: 150px;
+    margin-bottom: 200px;
+    padding-right:40px;
+    padding-left:40px;
+    padding-top:35px;
+    padding-bottom:40px;
+}
+
+#info .col-md-6 col-sm-12{
+    padding: 0;
+}
+
+#info .box{
+    background-color: white;
+    height: 100%;
+    width: 100%;    
+}
+
+#about{
+    color: #19345E;
+    padding-bottom:20px;
+    font-size:35px;
+    font-weight: bold;
+}
+           
+#info p{
+    font-size: 16px;
+    margin-bottom:20px;
+}
+
+#infotext{
+    color: #19345E;
+    padding-bottom: 20px;
+    font-size:35px;
+    font-weight: bold;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: grey;
+}
+  
+td, th {
+    border: 1px;
+    text-align: left;
+    padding: 10px;
+    height: 30px
+}
+  
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+tr:nth-child(odd) {
+    background-color: white;
+}
+
+footer{
+    background-color: #19345E;
+    width: 100%;
+    height: 250px;
+}
+
+footer .box{
+    background-color: #19345E;
+    width: 100%;    
+}
+
+footer .logo{
+    display: block;
+    margin:30px 50px;
+}
+
+footer .copyright{
+    display: block;
+    margin: 0 50px;
+    color: white;
+    font-size: 10px;
+}
+
+footer li{
+    display: inline;
+}
+
+footer .nav-follow{
+    display: inline;
+    width:50%;
+    text-align: left;
+    color: white;
+    text-decoration: none;
+    font-weight:bold;
+    font-size:20px;
+}
+
+footer .nav-link{
+    width:50%;
+    text-align: left;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 10px 5px;
+}
+
+footer ul{
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: 50px;
+    padding-top: 15px;
+}
+
+footer .nav-link img{
+    margin-right: 30px;
+}

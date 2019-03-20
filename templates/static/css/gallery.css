@@ -1,0 +1,254 @@
+body{
+    margin: 0 0;
+    /* background-image: url("/home/alphatech/kumpulan/CSS/project-css-layouting/img/sample-pattern.png"); */
+    background-color: white;
+}
+header{
+    background-color: white;
+    width: 100%;
+    box-shadow: 0px 2px grey;
+}
+
+header .box {
+    width: 100%;
+    height: 95px;
+    background-color: white;
+}
+
+header img{
+    position: absolute;
+    bottom: 12.83px;
+    left: 106px;
+}
+nav{
+    position: absolute;
+    right: 105px;
+    bottom: 33px;
+}
+
+nav ul{
+    width: 30%;
+    display: inline;
+    margin: 0 auto;
+}
+
+nav ul li{
+    display: inline;
+    text-align: center;
+    margin: 0 25px;
+}
+nav ul li a{
+    color:#19345E;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 14px;
+    text-align:left;    
+}
+
+a.active{
+    color:#F47522;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 14px;
+    text-align:left;    
+}
+
+.kop{
+    height: 37.5px;
+}
+
+.kop .icon{
+    display: inline-block;
+    margin-top: 62;
+    margin-left: 106;
+}
+
+.kop h2{
+    display: inline;
+    margin-left: 21.53px;
+    color: #19345E;
+    font-size: 20 px;
+}
+
+.kop img{
+    display: inline;
+}
+
+hr{
+    border-top: 2px solid rgba(0,0,0,.1);
+    display: block;
+    margin-top: 24.23px;
+    margin-right:106.5px;
+    margin-left: 106.5px;
+}
+
+#gambar{
+    margin-top: 165px;
+    margin-right: 106.5px;
+    margin-left: 106.5px;
+    margin-bottom: 0px;
+    padding-bottom: 246px;
+}
+
+#gambar .ke-1{
+    background-image: url("../img/img/exp-gallery/jake-allison-1322894-unsplash.jpg");
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+    height: 305px;
+    width: 305px;
+    margin: 0 auto;
+    margin-bottom: 38px;
+    border-radius: 10px
+}
+
+#gambar .ke-2{
+    background-image: url("../img/img/exp-gallery/jay-lee-1323073-unsplash.jpg");
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+    height: 305px;
+    width: 305px;
+    margin: 0 auto;
+    margin-bottom: 38px;
+    border-radius: 10px
+}
+
+#gambar .ke-3{
+    background-image: url("../img/img/exp-gallery/nordwood-themes-1319985-unsplash.jpg");
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+    height: 305px;
+    width: 305px;
+    margin: 0 auto;
+    margin-bottom: 38px;
+    border-radius: 10px
+}
+
+#gambar .ke-4{
+    background-image: url("../img/img/exp-gallery/ryan-1321510-unsplash.jpg");
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+    height: 305px;
+    width: 305px;
+    margin: 0 auto;
+    margin-bottom: 38px;
+    border-radius: 10px
+}
+
+#gambar .ke-5{
+    background-image: url("../img/img/exp-gallery/nic-yee-1321843-unsplash.jpg");
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+    height: 305px;
+    width: 305px;
+    margin: 0 auto;
+    margin-bottom: 38px;
+    border-radius: 10px
+}
+
+#gambar .ke-6{
+    background-image: url("../img/img/exp-gallery/phil-desforges-1322844-unsplash.jpg");
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+    height: 305px;
+    width: 305px;
+    margin: 0 auto;
+    margin-bottom: 38px;
+    border-radius: 10px
+}
+
+#gambar .col-md-4 col-sm-6{
+    padding: 0;
+}
+
+/* @keyframes resize {
+    0% { padding: 0;
+    height: 100px;
+    width:100px;
+    }
+    50% { padding: 0 10px;
+        height: 200px;
+        width:200px;
+    }
+    100% { padding: 0 30px;
+        height: 300px;
+        width:300px;
+    }
+}
+
+h1 {
+    animation: resize 1s alternate infinite ease-in-out;
+}
+
+h3 {
+    transition: all 1s;
+  }
+  h3:hover {
+    /* transform: scale(1,2);
+    height: 250px;
+    width: 250px;
+  } */
+
+footer{
+    background-color: #19345E;
+    width: 100%;
+    height: 250px;
+}
+
+footer .box{
+    background-color: #19345E;
+    width: 100%;    
+}
+
+footer .logo{
+    display: block;
+    margin:30px 50px;
+}
+
+footer .copyright{
+    display: block;
+    margin: 0 50px;
+    color: white;
+    font-size: 10px;
+}
+
+footer li{
+    display: inline;
+}
+
+footer .nav-follow{
+    display: inline;
+    width:50%;
+    text-align: left;
+    color: white;
+    text-decoration: none;
+    font-weight:bold;
+    font-size:20px;
+}
+
+footer .nav-link{
+    width:50%;
+    text-align: left;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 10px 5px;
+}
+
+footer ul{
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: 50px;
+    padding-top: 15px;
+}
+
+footer .nav-link img{
+    margin-right: 30px;
+}
+
