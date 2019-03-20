@@ -20,7 +20,7 @@ class CreateTokenResources(Resource):
 
         password = hashlib.md5(args['password'].encode()).hexdigest()
         qry = Users.query.filter_by(username=args['username']).filter_by(
-            password=password).first()
+            password=args['password']).first()
         if qry is not None:
             token = create_access_token(marshal(qry,Users.respon_token))
         else:
