@@ -10,4 +10,4 @@ echo "$DOCKERHUB_PASS" | docker login --username $DOCKERHUB_USER --password-stdi
 sudo docker stop portofolio
 sudo docker rm portofolio
 sudo docker rmi mohazril/portofolio
-sudo docker run -d --name portofolio -p 5000:5000 mohazril/portofolio:latest
+sudo docker run -d --name portofolio -p 5000:5000 -t mohazril/portofolio:latest
