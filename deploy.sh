@@ -2,7 +2,7 @@
 
 eval "$(ssh-agent -s)" &&
 ssh-add -k ~/.ssh/id_rsa &&
-cd /home/ubuntu/GIT
+cd /home/ubuntu/CI/deploytravis
 git pull
 
 source ~/.profile
