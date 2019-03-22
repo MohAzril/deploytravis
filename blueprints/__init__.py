@@ -18,7 +18,7 @@ app = Flask(__name__)
 # def index():
 #     return render_template('index.html')
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://azril:azril28081995@172.31.20.239/rest_portofolio'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://azril:Azril_28081995@172.11.112.183/rest_portofolio'
 #app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///app.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATION'] = False
 
@@ -75,8 +75,8 @@ app.register_blueprint(bp_items, url_prefix='/api/users/items')
 from blueprints.public.resources import bp_public
 app.register_blueprint(bp_public, url_prefix='/api/public/items')
 
-from blueprints.cart.resources import bp_cart
-app.register_blueprint(bp_cart, url_prefix='/api/customer/cart')
+from blueprints.cart.resources import bp_transaction
+app.register_blueprint(bp_transaction, url_prefix='/api/customer/transaction')
 
 from blueprints.cart_detail.resources import bp_cartdetail
 app.register_blueprint(bp_cartdetail, url_prefix='/api/customer/cart/detail')

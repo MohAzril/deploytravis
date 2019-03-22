@@ -46,6 +46,9 @@ class ItemsResource(Resource):
             if args['harga'] is not None:
                 qry = qry.filter_by(harga=args['harga'])
 
+            if qry.first() is None:
+                return {'status': 'NOT_FOUND','message':'item not found'},404, { 'Content-Type': 'application/json' }
+
             rows = []
             for row in qry.limit(args['rp']).offset(offset).all():
                 temp = marshal(row, Items.respon_fields)
