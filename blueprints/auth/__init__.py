@@ -22,9 +22,10 @@ class CreateTokenResources(Resource):
         qry = Users.query.filter_by(username=args['username']).filter_by(
             password=password).first()
         if qry is not None:
+            status = qry.status
             token = create_access_token(marshal(qry,Users.respon_token))
         else:
             return {'status':'UNAUTHORIZED','message':'invalid username or password or not registered yet'}, 401, { 'Content-Type': 'application/json' } 
-        return {'status':'success','token':token}, 200, { 'Content-Type': 'application/json' } 
+        return {'status':'success','token':token,"stat":status}, 200, { 'Content-Type': 'application/json' } 
 
 api.add_resource(CreateTokenResources, '')

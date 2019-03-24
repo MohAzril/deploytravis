@@ -49,11 +49,13 @@ class CartsDetailResource(Resource):
             #     return {'status': 'NOT_FOUND','message':'cart not found'},404, { 'Content-Type': 'application/json' }
 
             rows = []
+            total_harga=0
             for row in qry.limit(args['rp']).offset(offset).all():
+                total_harga += row.harga
                 temp = marshal(row, Cart.respon_fields)
                 rows.append(temp)
 
-            return {'status': 'OK','message':'success','page':args['p'],'carts':rows}, 200, { 'Content-Type': 'application/json' }
+            return {'status': 'OK','message':'success',"totalHarga":total_harga,'page':args['p'],'carts':rows}, 200, { 'Content-Type': 'application/json' }
         else :
             customer_id = get_jwt_claims()['user_id']
             if status == "customer":
