@@ -17,7 +17,6 @@ CORS(app)
 # @app.route('/')
 # def index():
 #     return render_template('index.html')
-
 # local
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://azril:Azril_28081995@172.11.112.183/rest_portofolio'
 # server
