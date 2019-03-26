@@ -89,7 +89,7 @@ class TransactionsResource(Resource):
         if status != "customer":
             return {'message':'Only customer can post transaction'},404, { 'Content-Type': 'application/json' }
         parser = reqparse.RequestParser()
-        parser.add_argument('paid_method', location='json', required=True)
+        parser.add_argument('paid_method', location='json', default="ngutang")
         args = parser.parse_args()#sudah jadi dictionary
 
         customer_id = get_jwt_claims()['user_id']
